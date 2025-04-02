@@ -1,0 +1,70 @@
+body{
+
+    margin:0;
+    padding: 2;
+    background-color: rgb(8, 5, 34);
+
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+
+   font-family: monospace;
+   font-size: 30px;
+   margin-top: 25px;
+   justify-content: center;
+   display: flex;
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+   white-space: nowrap;
+   overflow: hidden;
+   width: 0;
+   border-right: 3.5px solid white;
+   initial-letter: transparent;
+   animation: digitacao 3s steps(60, start) forwards, piscar 0.8s infinite;
+   height: 35px; 
+
+    
+
+}
+
+.descricao{
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 120px;
+    font-size: larger;
+    background-color: rgba(31, 31, 102, 0.89);
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+
+}
+.descricao:hover{
+
+    filter: opacity(0.8);
+}
+@keyframes digitacao {
+
+    0%{
+        width:10px;
+       }
+
+    100%{ 
+         width: 45%; 
+   
+        }
+    
+}
+@keyframes piscar {
+
+    50%{border-right: transparent;}
+    
+}
+
+
